@@ -10,19 +10,19 @@ datos = document.querySelector(".datos")
 // let arrayDesaprobados = []
 const empleados = [];
 let resud = "";
-
+let nombres = document.querySelector("#nombres");
+let sueldos = document.querySelector("#sueldos");
 
 valdarCampos=()=>{
 
-    let nombre = document.querySelector("#nombres");
-    let sueldo = document.querySelector("#sueldos");
-    if (!nombre.value)
-    { formNul(nombre,"llene los campos")} 
-     else{formOk(nombre)}
+   
+    if (!nombres.value)
+    { formNul(nombres,"llene los campos")} 
+     else{formOk(nombres)}
     
     
-     if (!sueldo.value) { formNul(sueldo,"ingrese una sifra")} else{if (!isNaN(sueldo)){formNul(sueldo,"no es numero")}}
-
+     if (!sueldos.value) { formNul(sueldos,"ingrese una sifra")} else{if (!isNaN(sueldos)){formNul(sueldos,"no es numero")}}
+return true
 }
 formOk = (inputs) => {
 
@@ -31,7 +31,7 @@ formOk = (inputs) => {
         if (inputs.lenght > 20) {alert("NO1")}
         if (inputs.lenght < 3) {alert("NO2")}
         // if (nombre.test(".")) {alert("NO")}else{     error=1}
-        if (/\w/.test(inputs)) {formNul(inputs,"solo letra y numeros")}else{     errors=1}
+        if (/\w/.test(inputs)) {formNul(inputs,"solo letra y numeros")}
         
     
         
@@ -61,7 +61,10 @@ formNul=(inputs,error)=>{
 document.getElementById("form").addEventListener("submit", (e) => {
     
     e.preventDefault();
-    valdarCampos();
+    if (valdarCampos()){
+        nombre=nombres.value
+        sueldo=sueldos.value
+    }
     
     
     //   empleados[i]=[nombre,sueldo,(i+"pepito") ] ;
