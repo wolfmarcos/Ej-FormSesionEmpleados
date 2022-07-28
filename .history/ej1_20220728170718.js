@@ -10,15 +10,15 @@ datos = document.querySelector(".datos")
 // let arrayDesaprobados = []
 const empleados = [];
 let resud = "";
-let nombres = document.querySelector("#nombres");
+let direcionnombres = document.querySelector("#nombres");
 let sueldos = document.querySelector("#sueldos");
 let declaracion = true
-valdarCampos=()=>{
+valdarCampos=(nombres,sueldos)=>{
 
    
     if (!nombres.value)
     { formNul(nombres,"llene los campos")} 
-     else{  declaracion=formOk(nombres)}
+     else{  declaracion=formOk()}
     
     
      if (!sueldos.value) { declaracion =formNul(sueldos,"ingrese una cifra")} else{if (!isNaN(sueldos)){declaracion =formNul(sueldos,"no es numero")}}
@@ -27,11 +27,11 @@ console.log(declaracion)
 }
 formOk = (inputs) => {
     // const teta=/\w/
-        if (inputs.value.lenght < 20) {declaracion=formNul(inputs,"menos de 20 caracteres")}
-        if (inputs.value.lenght > 3) {declaracion=formNul(inputs,"mas de 3 caracteres")}
+        if (inputs.lenght < 20) {declaracion=formNul(inputs,"menos de 20 caracteres")}
+        if (inputs.lenght > 3) {declaracion=formNul(inputs,"mas de 3 caracteres")}
         
         // if (nombre.test(".")) {alert("NO")}else{     error=1}
-        if (/\w/.test(inputs.value)) {console.log("es:"+/\w/.test(inputs.value));declaracion=formNul(inputs,"solo letra y numeros")}
+        // if (/\w/.test(inputs)) {formNul(inputs,"solo letra y numeros")}
         return (true==declaracion)
     
         

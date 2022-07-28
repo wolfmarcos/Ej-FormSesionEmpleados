@@ -18,7 +18,7 @@ valdarCampos=()=>{
    
     if (!nombres.value)
     { formNul(nombres,"llene los campos")} 
-     else{  declaracion=formOk(nombres)}
+     else{  declaracion=formOk()}
     
     
      if (!sueldos.value) { declaracion =formNul(sueldos,"ingrese una cifra")} else{if (!isNaN(sueldos)){declaracion =formNul(sueldos,"no es numero")}}
@@ -27,11 +27,10 @@ console.log(declaracion)
 }
 formOk = (inputs) => {
     // const teta=/\w/
-        if (inputs.value.lenght < 20) {declaracion=formNul(inputs,"menos de 20 caracteres")}
-        if (inputs.value.lenght > 3) {declaracion=formNul(inputs,"mas de 3 caracteres")}
-        
+        if (inputs.lenght < 20) {declaracion=formNul(inputs,"menos de 20 caracteres")}
+        if (inputs.lenght > 3) {formNul(declaracion=inputs,"mas de 3 caracteres")}
         // if (nombre.test(".")) {alert("NO")}else{     error=1}
-        if (/\w/.test(inputs.value)) {console.log("es:"+/\w/.test(inputs.value));declaracion=formNul(inputs,"solo letra y numeros")}
+        // if (/\w/.test(inputs)) {formNul(inputs,"solo letra y numeros")}
         return (true==declaracion)
     
         
@@ -61,10 +60,9 @@ formNul=(inputs,error)=>{
 document.getElementById("form").addEventListener("submit", (e) => {
     
     e.preventDefault();
-    nombre=nombres.value
-    sueldo=sueldos.value
-    console.log(valdarCampos(nombre,sueldo))
-   
+    console.log(valdarCampos())
+        nombre=nombres.value
+        sueldo=sueldos.value
     
     
     
