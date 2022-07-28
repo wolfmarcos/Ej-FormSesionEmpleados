@@ -61,10 +61,10 @@ formNul=(inputs,error)=>{
 document.getElementById("form").addEventListener("submit", (e) => {
     
     e.preventDefault();
-    console.log(valdarCampos())
+    valdarCampos()){
         nombre=nombres.value
         sueldo=sueldos.value
-    
+    }
     
     
     //   empleados[i]=[nombre,sueldo,(i+"pepito") ] ;
