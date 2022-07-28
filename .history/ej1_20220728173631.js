@@ -30,7 +30,7 @@ formOk = (inputs) => {
         if (inputs.value.lenght < 20) {declaracion=formNul(inputs,"menos de 20 caracteres")}
         if (inputs.value.lenght > 3) {declaracion=formNul(inputs,"mas de 3 caracteres")}
         // if (nombre.test(".")) {alert("NO")}else{     error=1}
-        if (!/[a-z]/.test(inputs.value)) {console.log("es:"+!/\w/.test(inputs.value));declaracion=formNul(inputs,"solo letra y numeros")}
+        if (//.test(inputs.value)) {console.log("es:"+!/\w/.test(inputs.value));declaracion=formNul(inputs,"solo letra y numeros")}
        
         return (true==declaracion)
     }
