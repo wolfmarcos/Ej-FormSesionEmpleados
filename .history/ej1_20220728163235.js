@@ -18,11 +18,11 @@ valdarCampos=()=>{
    
     if (!nombres.value)
     { formNul(nombres,"llene los campos")} 
-     else{ declaracion =formOk(nombres)}
+     elseformOk(nombres)}
     
     
-     if (!sueldos.value) { formNul(sueldos,"ingrese una cifra")} else{if (!isNaN(sueldos)){declaracion =formNul(sueldos,"no es numero")}}
-return true==declaracion
+     if (!sueldos.value) { formNul(sueldos,"ingrese una sifra")} else{if (!isNaN(sueldos)){formNul(sueldos,"no es numero")}}
+return true
 }
 formOk = (inputs) => {
 

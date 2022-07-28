@@ -21,8 +21,8 @@ valdarCampos=()=>{
      else{ declaracion =formOk(nombres)}
     
     
-     if (!sueldos.value) { formNul(sueldos,"ingrese una cifra")} else{if (!isNaN(sueldos)){declaracion =formNul(sueldos,"no es numero")}}
-return true==declaracion
+     if (!sueldos.value) { formNul(sueldos,"ingrese una sifra")} else{if (!isNaN(sueldos)){formNul(sueldos,"no es numero")}}
+return true=delaracio
 }
 formOk = (inputs) => {
 
