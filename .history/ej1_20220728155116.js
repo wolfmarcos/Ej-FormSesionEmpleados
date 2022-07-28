@@ -101,8 +101,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
 
 // let emp = new Empleados;
 document.querySelector("#agregarHTML").addEventListener("click", (e) => {
-nombre=nombres.value
-sueldo=sueldos.value
+nombre=nombres
 
     while (repeticion == true) {
         let nombre = prompt("empleado: ");
