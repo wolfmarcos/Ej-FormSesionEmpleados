@@ -1,0 +1,26 @@
+
+header{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+
+}
+.contenedorR{ display: grid;
+       grid-template-columns: repeat(2 ,100px);
+    /* gap:10px */
+    padding: 200px;
+    }
+
+    .contenedorR div{ border: solid 1px coral;}
+
+    form{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .alet{display: flex;
+flex-direction: column;
+/* align-items: flex-start */
+max-width: 300px;
+  padding: 200px  ;}

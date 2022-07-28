@@ -1,0 +1,14 @@
+.contenedorR{ display: grid;
+       grid-template-columns: repeat(2 ,100px);
+    :10px
+    }
+
+    .contenedorR div{ border: solid 5px coral;}
+
+    form{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+
+    }

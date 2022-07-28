@@ -1,0 +1,9 @@
+.contenedorR{ display: grid;
+
+    grid-template-columns: repeat(2 ,100px)}
+
+    form{
+        display: grid;
+        justify-content: center;
+
+    }
