@@ -63,15 +63,11 @@ formNul = (inputs, error) => {
     inputs.classList.add("borde")
     return false
 }
-const remover=document.querySelectorAll(".forms div")
-let nr2=remover[0].children
-let nr1=remover[1].children
+const remover=document.querySelector(".forms input")
 forms.addEventListener("submit", (e) => {
     let verifica=true
-    nr1[1].classList.replace("borde","b")
-     nr2[1].classList.replace("borde","b")
+    remover.cha.classList.replace("borde","b")
     // forms.classList.add("f")
-    // remover.classList.replace("borde","b")
     e.preventDefault();
     
      verifica = valdarCampos(nombres,sueldos);

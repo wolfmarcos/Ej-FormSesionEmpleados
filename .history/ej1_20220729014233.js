@@ -64,7 +64,7 @@ formNul = (inputs, error) => {
     return false
 }
 const remover=document.querySelectorAll(".forms div")
-let nr2=remover[0].children
+let nr2=remover[2].children
 let nr1=remover[1].children
 forms.addEventListener("submit", (e) => {
     let verifica=true

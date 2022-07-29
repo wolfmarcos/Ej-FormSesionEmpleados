@@ -15,7 +15,7 @@ let sueldos = document.querySelector("#sueldos");
 
 // reseteo
 const forms=document.querySelector(".forms")
-
+const remover=document.querySelector(".forms input")
 // email.conten(/\w+@+\./)  
 
 valdarCampos = (nombres,sueldos) => {
@@ -63,15 +63,12 @@ formNul = (inputs, error) => {
     inputs.classList.add("borde")
     return false
 }
-const remover=document.querySelectorAll(".forms div")
-let nr2=remover[0].children
-let nr1=remover[1].children
+
+
 forms.addEventListener("submit", (e) => {
     let verifica=true
-    nr1[1].classList.replace("borde","b")
-     nr2[1].classList.replace("borde","b")
+    remover.classList.toggle("b","borde")
     // forms.classList.add("f")
-    // remover.classList.replace("borde","b")
     e.preventDefault();
     
      verifica = valdarCampos(nombres,sueldos);
@@ -79,6 +76,9 @@ forms.addEventListener("submit", (e) => {
     if (verifica) {
         nombre = nombres.value
         sueldo = sueldos.value
+
+
+
 
 
         //   empleados[i]=[nombre,sueldo,(i+"pepito") ] ;

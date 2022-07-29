@@ -13,17 +13,9 @@ let resud = "";
 let nombres = document.querySelector("#nombres");
 let sueldos = document.querySelector("#sueldos");
 
-// reseteo
-const forms=document.querySelector(".forms")
-
-// email.conten(/\w+@+\./)  
-
 valdarCampos = (nombres,sueldos) => {
-    
-    
     let declaracion = true
-    console.log(nombres.value)
-   
+    
     if (!nombres.value) {
         declaracion =  formNul(nombres, "llene los campos")
     } 
@@ -44,11 +36,9 @@ valdarCampos = (nombres,sueldos) => {
         declaracion = formNul(nombres, "mas de 3 caracteres")
     }
     // if (nombre.test(".")) {alert("NO")}else{     error=1}
-    if (/^[a-zA-Z0-9\_\-]{4,16}$/.test(nombres.value))
-     {
-        console.log("correcto"+/^[a-zA-Z0-9\_\-]{4,16}$/.test(nombres.value)) }
-       else{ console.log("incorrecto:" + /^[a-zA-Z0-9\_\-]{4,16}$/.test(nombres.value));
-        declaracion = formNul(nombres, "solo letra y numeros ")
+    if (!/[a-zA-Z]/.test(nombres.value)) {
+        console.log("es:" + !/[a-zA-Z]/.test(nombres.value));
+        declaracion = formNul(nombres, "solo letra ")
     }
     console.log(declaracion)
 
@@ -63,15 +53,17 @@ formNul = (inputs, error) => {
     inputs.classList.add("borde")
     return false
 }
-const remover=document.querySelectorAll(".forms div")
-let nr2=remover[0].children
-let nr1=remover[1].children
+
+let verifica=true
+
+const forms=document.querySelector(".forms")
+// email.conten(/\w+@+\./)  
+const remover=document.querySelector(".forms input")
+
+
 forms.addEventListener("submit", (e) => {
-    let verifica=true
-    nr1[1].classList.replace("borde","b")
-     nr2[1].classList.replace("borde","b")
+    remover.classList.remove("borde")
     // forms.classList.add("f")
-    // remover.classList.replace("borde","b")
     e.preventDefault();
     
      verifica = valdarCampos(nombres,sueldos);
@@ -79,6 +71,9 @@ forms.addEventListener("submit", (e) => {
     if (verifica) {
         nombre = nombres.value
         sueldo = sueldos.value
+
+
+
 
 
         //   empleados[i]=[nombre,sueldo,(i+"pepito") ] ;
