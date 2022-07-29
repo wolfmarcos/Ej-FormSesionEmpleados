@@ -1,0 +1,43 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenedorR {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  /* gap:10px */
+  padding: 200px;
+}
+
+.ok .nota{display: none;
+
+}
+.ok input{
+  border-bottom: solid 1px rgb(14, 148, 34);
+box-shadow: 20px 12px 10px 20px green;
+}
+.f  input{
+  background-color: brown;
+
+}
+
+
+.borde{border-bottom: solid 5px brown;}
+.forms {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+background-color: blanchedalmond;
+
+}
+
+.alet {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start */
+  max-width: 300px;
+  padding: 50px;
+  gap: 10px;
+}
