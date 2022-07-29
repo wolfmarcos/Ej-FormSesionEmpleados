@@ -35,7 +35,7 @@ valdarCampos = (nombres,sueldos) => {
         }
     }
     if (sueldos.value.length > 4) { 
-        declaracion = formNul(sueldos, "menos de 5 cifras")
+        declaracion = formNul(sueldos, "menos de 5 caracteres")
     }
        if (nombres.value.length > 10) { 
         declaracion = formNul(nombres, "menos de 10 caracteres")
