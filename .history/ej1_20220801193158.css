@@ -9,10 +9,9 @@ header {
   grid-template-columns: repeat(2, 100px);
   /* gap:10px */
   padding: 200px;
-  
+  bo
 }
 
-.contenedorR div{border: 1px solid red;}
 /* .ok .nota{display: none;} */
 /* .ok letra{  border-bottom: solid 1px rgb(14, 148, 34);box-shadow: 1px 1px 3px 1px green;} */
 
