@@ -1,0 +1,65 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenedorR {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  /* gap:10px */
+  padding: 200px;
+}
+
+/* .ok .nota{display: none;} */
+/* .ok letra{  border-bottom: solid 1px rgb(14, 148, 34);box-shadow: 1px 1px 3px 1px green;} */
+
+
+/* .b input{border-bottom: solid 2px rgb(0, 0, 0)} */
+
+.forms {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+background-color: rgb(205, 255, 253);
+
+}
+.ha  .nota, .nota{visibility: hidden;}
+
+.v .nota{visibility: visible;}
+
+/* .corecto inporte,{bo} */
+
+.alet {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start */
+  max-width: 300px;
+  padding: 50px;
+  gap: 10px;
+}
+
+
+/* .forms  .nota{  background-color: blueviolet;  } */
+
+ /* .d.h.nota{visibility: hidden;} */
+/* .b.borde{border-bottom: solid 5px brown;} */
+
+
+/* .forms .h .nota{
+  background-color: blue;
+  padding: 20px;
+  margin: 30px;
+  box-shadow: 10px 10px 10px; */
+  /* visibility: visible; */
+  /* position: absolute;
+  font-size: 20000px;
+  font-weight: 500;
+  text-align: right; */
+                    
+
+
+
+
+/* .forms.ok input {  border: 0.1px solid;  border-color: #08ffc8;} */
+/* .agrega  {  background-color: blueviolet;  visibility: visible;  color:#e74c3c;} */
