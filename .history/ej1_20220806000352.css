@@ -24,9 +24,6 @@ width: 70%;
       
 
 }
-.titulo{
-  text-shadow:10px 10px 10px #0F362D;
-}
 .fa-xmark{
   color: #e3e3e3;
   order:1;
@@ -35,10 +32,7 @@ top: 0;
 bottom: 0;
 right:0;
 padding: 4%;
-position: absolute;
-box-shadow:10px 10px 10px #0F362D;
-border-radius: 100px;
-}
+position: absolute;}
 .fa-xmark:hover{color: red;}
 .nv{    visibility: hidden;} 
 .forms {

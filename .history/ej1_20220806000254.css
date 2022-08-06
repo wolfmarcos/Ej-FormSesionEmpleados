@@ -20,25 +20,19 @@ width: 70%;
       top: 0;
       bottom: 0;
       right: 1;
-      margin: 8%;
+      margin: 18%;
       
 
 }
-.titulo{
-  text-shadow:10px 10px 10px #0F362D;
-}
 .fa-xmark{
-  color: #e3e3e3;
+  color: #0F362D;
   order:1;
   font-size: 55px;
 top: 0;
 bottom: 0;
 right:0;
-padding: 4%;
-position: absolute;
-box-shadow:10px 10px 10px #0F362D;
-border-radius: 100px;
-}
+padding: 3%;
+position: absolute;}
 .fa-xmark:hover{color: red;}
 .nv{    visibility: hidden;} 
 .forms {

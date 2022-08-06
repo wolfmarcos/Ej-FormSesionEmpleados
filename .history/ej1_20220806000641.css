@@ -36,9 +36,7 @@ bottom: 0;
 right:0;
 padding: 4%;
 position: absolute;
-box-shadow:10px 10px 10px #0F362D;
-border-radius: 100px;
-}
+bo-shadow:10px 10px 10px #0F362D;}
 .fa-xmark:hover{color: red;}
 .nv{    visibility: hidden;} 
 .forms {
