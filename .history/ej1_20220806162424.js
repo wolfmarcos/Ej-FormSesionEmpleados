@@ -212,8 +212,10 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
             for (n of emas300) {
                 // resud += `<div >${n.nomebres}</div>  <div>${n.sueldos}</div> <div class="datos">+</div> `
                 
-                resud += `<tr class="datos"><td>${n.nomebres}</td>
-                <td>${n.sueldos}</td> </tr> `
+                resud += `</tr><tr class="datos"><td>${n.nomebres}</td>
+                <td>${n.sueldos}</td> </tr>
+                
+                `
                 
                 // '<div>'+n.nomebres+'</div>'+'<div>'+n.sueldos+'</div>'
 
