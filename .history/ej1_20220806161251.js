@@ -44,7 +44,7 @@ valdarCampos = (nombres, sueldos) => {
         declaracion = formNul(nombres, "mas de 3 caracteres")
     }
     // if (nombre.test(".")) {alert("NO")}else{     error=1}
-    if (/^[a-zA-Z0-9\_\-]{1,16}$/.test(nombres.value)) {
+    if (/^[a-zA-Z0-9\_\-]{,16}$/.test(nombres.value)) {
         console.log("correcto" + /^[a-zA-Z0-9\_\-]{4,16}$/.test(nombres.value))
     } else {
         console.log("incorrecto:" + /^[a-zA-Z0-9\_\-]{4,16}$/.test(nombres.value));
