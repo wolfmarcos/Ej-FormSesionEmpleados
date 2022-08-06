@@ -231,7 +231,7 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
             // ${resud}
             // </div>`
 
-            datos.outerHTML = resud;
+            datos.ot = resud;
             document.querySelector(".final").innerText = resud;
         } else {
             datos.innerText = "no se encontro sueldo mas de 300"

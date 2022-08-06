@@ -213,7 +213,8 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
                 // resud += `<div >${n.nomebres}</div>  <div>${n.sueldos}</div> <div class="datos">+</div> `
                 
                 resud += `<tr class="datos">
-                <td>${n.nomebres}</td> <td>${n.sueldos}</td> </tr> `
+                <td>${n.nomebres}</td>
+                <td>${n.sueldos}</td> </tr> `
                 
                 // '<div>'+n.nomebres+'</div>'+'<div>'+n.sueldos+'</div>'
 
@@ -231,7 +232,7 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
             // ${resud}
             // </div>`
 
-            datos.outerHTML = resud;
+            datos.innerHTML = resud;
             document.querySelector(".final").innerText = resud;
         } else {
             datos.innerText = "no se encontro sueldo mas de 300"
