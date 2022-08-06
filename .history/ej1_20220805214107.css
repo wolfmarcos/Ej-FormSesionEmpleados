@@ -73,16 +73,13 @@ justify-content: center;
     grid-template-columns:1fr;
   
   }
-
-  .empleadosMas300-div{
-    grid-column:  1/2 ;
-   margin: 2%;
-  display: flex;
-  
-  justify-content: center;}
-
 }
+.empleadosMas300-div{
+  grid-column:  1 ;
+ margin: 2%;
+display: flex;
 
+justify-content: center;
 /* align-items: center; */
 /* text-align: center; */
 /* align-self: center; */

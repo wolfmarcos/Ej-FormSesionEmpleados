@@ -24,7 +24,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(205, 255, 253);
-  padding: 2%;
+  padding: 2;
 
 }
 .empleadosMas300-div{
@@ -73,19 +73,7 @@ justify-content: center;
     grid-template-columns:1fr;
   
   }
-
-  .empleadosMas300-div{
-    grid-column:  1/2 ;
-   margin: 2%;
-  display: flex;
-  
-  justify-content: center;}
-
 }
-
-/* align-items: center; */
-/* text-align: center; */
-/* align-self: center; */
 
 
 /* .forms  .nota{  background-color: blueviolet;  } */
