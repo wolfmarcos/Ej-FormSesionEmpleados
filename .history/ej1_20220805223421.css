@@ -1,0 +1,122 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.contenedorR {
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  /* gap:10px */
+  padding: 200px;
+  
+}
+
+.contenedorR div{border: 1px solid red;}
+/* .ok .nota{display: none;} */
+/* .ok letra{  border-bottom: solid 1px rgb(14, 148, 34);box-shadow: 1px 1px 3px 1px green;} */
+
+
+/* .b input{border-bottom: solid 2px rgb(0, 0, 0)} */
+
+.forms {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205, 255, 253);
+  padding: 2%;
+
+}
+.empleadosMas300-div{
+  grid-column:  1/3 ;
+ margin: 2%;
+display: flex;
+
+justify-content: center;
+/* align-items: center; */
+/* text-align: center; */
+/* align-self: center; */
+
+}
+
+/* .ha  .nota,.ha .nota{visibility: hidden;} */
+.h .nota {
+  visibility: hidden;
+}
+
+
+.c input {
+  border-bottom: 4px solid greenyellow;
+}
+
+.f .nota {
+  visibility: visible;
+}
+
+/* .corecto inporte,{bo} */
+.f input {
+  border-bottom: 4px solid rgb(230, 31, 31)
+}
+
+.alet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 300px; */
+ /* margin: 0 ; */
+  gap: 10px;
+  padding: 3%;
+  width: 100%;
+  background-color: rgb(0, 174, 255);
+}
+
+@media screen and (max-width:538px) {
+  header {
+    display: grid;
+    grid-template-columns:1fr;
+  
+  }
+
+  .empleadosMas300-div{
+    grid-column:  1/2 ;
+   margin: 2%;
+  display: flex;
+  
+  justify-content: center;}
+
+}
+
+
+table{
+    
+	/* align-self:center; */
+	border-collapse: collapse;
+	/* width: 100%; */
+    /* display: flex; */
+    /* padding: 50%; */
+    margin: 50%;
+   
+}
+
+ th, td,thead{
+    min-width: 100px;
+	 text-align: center;
+    
+} 
+
+thead{
+	background-color: #041c17;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+   
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
