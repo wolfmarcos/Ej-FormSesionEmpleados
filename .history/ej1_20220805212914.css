@@ -27,18 +27,13 @@ header {
   
 
 }
-.empleadosMas300-div{
-  grid-column:  1/3 ;
- margin: 2%;
+#empleadosMas300{
+  grid-column:  1/4 ;
+  max-width: 200px;
 display: flex;
-
-justify-content: center;
 /* align-items: center; */
-/* text-align: center; */
-/* align-self: center; */
 
 }
-
 /* .ha  .nota,.ha .nota{visibility: hidden;} */
 .h .nota {
   visibility: hidden;

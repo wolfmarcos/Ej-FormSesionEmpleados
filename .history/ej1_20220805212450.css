@@ -24,21 +24,12 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(205, 255, 253);
-  
+  jus
 
 }
-.empleadosMas300-div{
-  grid-column:  1/3 ;
- margin: 2%;
-display: flex;
-
-justify-content: center;
-/* align-items: center; */
-/* text-align: center; */
-/* align-self: center; */
-
+#empleadosMas300{
+  grid-column:  1/4 
 }
-
 /* .ha  .nota,.ha .nota{visibility: hidden;} */
 .h .nota {
   visibility: hidden;
