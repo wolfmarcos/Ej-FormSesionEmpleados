@@ -31,33 +31,22 @@ width: 70%;
   color: rgb(181, 231, 229);;
   order:1;
   font-size: 55px;
-
-}
-.rota{
-  top: 0;
-/* bottom: 0; */
+top: 0;
+bottom: 0;
 right:0;
 padding: 4%;
 position: absolute;
 box-shadow:10px 10px 10px #0F362D;
-width: 30px;
 border-radius: 100px;
-
-
-  
 }
-
-
-.rota:hover{
-  animation-name: animate  ;
+.fa-xmark{
+  animation-name: animate2 4s linear infinite;
   animation-duration: 4s;
+  transform: rotate(1deg);
+  transform: rotate(360deg);
 }
-
-@keyframes animate  {
-  0%{transform: rotate(1deg);
- 
-}
-100%{ transform: rotate(360deg);}
+@keyframes identifier {
+  
 }
 
 

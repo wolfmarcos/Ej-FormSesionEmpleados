@@ -48,10 +48,7 @@ border-radius: 100px;
 }
 
 
-.rota:hover{
-  animation-name: animate  ;
-  animation-duration: 4s;
-}
+.rota:hover{}
 
 @keyframes animate  {
   0%{transform: rotate(1deg);

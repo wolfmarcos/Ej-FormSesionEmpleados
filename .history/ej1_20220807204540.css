@@ -42,17 +42,11 @@ position: absolute;
 box-shadow:10px 10px 10px #0F362D;
 width: 30px;
 border-radius: 100px;
-
+  animation-name: animate  ;
+  animation-duration: 4s;
 
   
 }
-
-
-.rota:hover{
-  animation-name: animate  ;
-  animation-duration: 4s;
-}
-
 @keyframes animate  {
   0%{transform: rotate(1deg);
  
