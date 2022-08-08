@@ -71,14 +71,10 @@ border-radius: 400px;
 100%{ transform: rotate(360deg);}
 }
 
-.fa-xmark:hover{
-  animation-name: animate  ;
-  animation-duration: 2s;
-  /* linear infinite */
-  color: red;}
-  .setGira{
-    animation-name: animate  ;
-    animation-duration: 2s;}
+
+.gira{
+  animation-name: animate;
+  animation-duration: 4s }
 
 
 

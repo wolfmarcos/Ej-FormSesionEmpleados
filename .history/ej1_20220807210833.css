@@ -44,7 +44,11 @@ width: 70%;
   font-size: 55px;
 
 }
-
+.fa-xmark:hover{
+  animation-name: animate  ;
+  animation-duration: 2s;
+  /* linear infinite */
+  color: red;}
 .rota{
   top: 0;
 /* bottom: 0; */
@@ -62,7 +66,9 @@ border-radius: 400px;
 
 
 
-
+.gira{
+  animation-name: animate
+  animation-duration: 4s }
 
 @keyframes animate  {
   0%{transform: rotate(1deg);
@@ -71,14 +77,8 @@ border-radius: 400px;
 100%{ transform: rotate(360deg);}
 }
 
-.fa-xmark:hover{
-  animation-name: animate  ;
-  animation-duration: 2s;
-  /* linear infinite */
-  color: red;}
-  .setGira{
-    animation-name: animate  ;
-    animation-duration: 2s;}
+
+
 
 
 

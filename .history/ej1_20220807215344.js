@@ -177,7 +177,7 @@ const rotar=document.querySelector(".rota");
 
 document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
    
-    rotar.className="rota"
+   
    
     document.querySelector(".x").addEventListener("click", (n) => {
         mas.className="nv"

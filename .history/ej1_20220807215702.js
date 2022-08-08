@@ -182,7 +182,7 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
     document.querySelector(".x").addEventListener("click", (n) => {
         mas.className="nv"
         e.target.innerText="sueldos de mas de 300"
-        rotar.className="rota"
+        // rotar.className="rota"
         
         
     //  console.log(mas)

@@ -76,9 +76,9 @@ border-radius: 400px;
   animation-duration: 2s;
   /* linear infinite */
   color: red;}
-  .setGira{
-    animation-name: animate  ;
-    animation-duration: 2s;}
+.gira{
+  animation-name: animate;
+  animation-duration: 4s }
 
 
 

@@ -172,18 +172,14 @@ document.querySelector("#agregarHTML").addEventListener("click", (e) => {
 // empleados.forEach( cada => console.log( cada["nomebres"]));
 
 
-const rotar=document.querySelector(".rota");
+const rotar=document.querySelector("rota");
 
 
 document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
-   
-    rotar.className="rota"
-   
-    document.querySelector(".x").addEventListener("click", (n) => {
+ rotar.classList.toggle("gira") 
+    document.querySelector(".ok").addEventListener("click", (n) => {
         mas.className="nv"
         e.target.innerText="sueldos de mas de 300"
-        rotar.className="rota"
-        
         
     //  console.log(mas)
     })
@@ -193,13 +189,8 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
          let seve =mas.classList.toggle("nv");
       
         
-        if(!seve){
-            rotar.className="rota setGira"
-            e.target.innerText="salir"}
-        else{e.target.innerText="sueldos de mas de 300"
-    
-       
-    }
+        if(!seve){ e.target.innerText="salir"}
+        else{e.target.innerText="sueldos de mas de 300" }
       
        
     

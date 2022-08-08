@@ -28,23 +28,6 @@ width: 70%;
   text-shadow:10px 10px 10px #146a56;
 }
 
-
-.fa-xmark{
-  top: 0;
-  /* bottom: 0; */
-  right:0;
-  padding: 4%;
-  position: absolute;
-
-  width: 30px;
-  border-radius: 100px; 
-
-  color: rgb(181, 231, 229);;
-  order:1;
-  font-size: 55px;
-
-}
-
 .rota{
   top: 0;
 /* bottom: 0; */
@@ -52,17 +35,33 @@ right:0;
 padding: 4%;
 position: absolute;
 box-shadow:10px 10px 10px #0F362D;
-width: 40px;
-height: 40px;
-border-radius: 400px;
- 
+width: 30px;
+border-radius: 100px;
+
+
+  
+}
+.fa-xmark{
+  top: 0;
+  /* bottom: 0; */
+  right:0;
+  padding: 4%;
+  position: absolute;
+  box-shadow:10px 10px 10px #0F362D;
+  width: 30px;
+  border-radius: 100px; 
+  
+  color: rgb(181, 231, 229);;
+  order:1;
+  font-size: 55px;
+
 }
 
 
-
-
-
-
+.rota:hover{
+  animation-name: animate  ;
+  animation-duration: 4s;
+}
 
 @keyframes animate  {
   0%{transform: rotate(1deg);
@@ -71,14 +70,11 @@ border-radius: 400px;
 100%{ transform: rotate(360deg);}
 }
 
+
 .fa-xmark:hover{
-  animation-name: animate  ;
-  animation-duration: 2s;
-  /* linear infinite */
+  
+  
   color: red;}
-  .setGira{
-    animation-name: animate  ;
-    animation-duration: 2s;}
 
 
 

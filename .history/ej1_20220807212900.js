@@ -176,14 +176,12 @@ const rotar=document.querySelector(".rota");
 
 
 document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
-   
-    rotar.className="rota"
-   
-    document.querySelector(".x").addEventListener("click", (n) => {
+    rotar.classList.toggle("setGira");
+    document.querySelector(".ok").addEventListener("click", (n) => {
         mas.className="nv"
         e.target.innerText="sueldos de mas de 300"
-        rotar.className="rota"
-        
+
+        rotar.classList.toggle("setGira");
         
     //  console.log(mas)
     })
@@ -194,12 +192,9 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
       
         
         if(!seve){
-            rotar.className="rota setGira"
+            rotar.classList.toggle("setGira");
             e.target.innerText="salir"}
-        else{e.target.innerText="sueldos de mas de 300"
-    
-       
-    }
+        else{e.target.innerText="sueldos de mas de 300" }
       
        
     
