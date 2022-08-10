@@ -492,7 +492,7 @@ body {
     width: 28vw;
     height: 66vh;
   }
- 
+  .datos{ background-color:red ;}
   /*
   .details span {
     display: none;

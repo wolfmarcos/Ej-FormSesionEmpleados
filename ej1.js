@@ -6,9 +6,9 @@ let i = 0;
 let repeticion = true;
 resu = document.querySelector(".contenedorR2")
 
-datos = document.querySelector(".datos")
+datos = document.querySelector(".indice")
 // let arrayDesaprobados = []
-const empleados = [];
+const empleadosArray = [];
 let resud = "";
 let nombres = document.querySelector("#nombres");
 let sueldos = document.querySelector("#sueldos");
@@ -119,28 +119,34 @@ forms.addEventListener("submit", (e) => {
         sueldo = sueldos.value
 
 
-        //   empleados[i]=[nombre,sueldo,(i+"pepito") ] ;
-        //  empleados[i].push(nombre,sueldo );
+        //   empleadosArray[i]=[nombre,sueldo,(i+"pepito") ] ;
+        //  empleadosArray[i].push(nombre,sueldo );
 
 
-        //   localStorage
-        empleados[i] = {
+        //   cargar localStorage con array dos maneras de hacerlo 2
+        // primer manera solo array[]___________________________________
+        empleadosArray[i] = {
             nomebres: nombre,
             sueldos: sueldo,
             id: (i + "pepito")
         }
 
-        sessionStorage.setItem('empleadoss', empleados)
+        sessionStorage.setItem('empleadoss', empleadosArray)
         sessionStorage.setItem(i, i++)
-        // repeticion=confirm("ingresar otro  empleado")
-        //   Object.values() 
-        // empleados[0]=sessionStorage.getItem('empleadoss')
+//segunda manera con JSON_y push_______________________________________
 
 
-        console.log(empleados)
+
+
+
+
+            //   Object.values() 
+       
+
+        console.log(empleadosArray)
         console.log(sessionStorage.getItem(i))
 
-        //  for (let cada of empleados){console.log(cada.sueldos);};  
+        //  for (let cada of empleadosArray){console.log(cada.sueldos);};  
         //   localStorage.href="#"
         // location
         nombres.value = "";
@@ -176,9 +182,9 @@ document.querySelector("#agregarHTML").addEventListener("click", (e) => {
     while (repeticion == true) {
         let nombre = prompt("empleado: ");
         let sueldo = parseInt(prompt("sueldo: "));
-        //   empleados[i]=[nombre,sueldo,(i+"pepito") ] ;
-        //  empleados[i].push(nombre,sueldo );
-        empleados[i] = {
+        //   empleadosArray[i]=[nombre,sueldo,(i+"pepito") ] ;
+        //  empleadosArray[i].push(nombre,sueldo );
+        empleadosArray[i] = {
             nomebres: nombre,
             sueldos: sueldo,
             id: (i + "pepito")
@@ -187,7 +193,7 @@ document.querySelector("#agregarHTML").addEventListener("click", (e) => {
         repeticion = confirm("ingresar otro  empleado")
     };
     //   Object.values() 
-    for (let cada of empleados) {
+    for (let cada of empleadosArray) {
         console.log(cada.sueldos);
     };
 
@@ -195,7 +201,7 @@ document.querySelector("#agregarHTML").addEventListener("click", (e) => {
 });
 
 
-// empleados.forEach( cada => console.log( cada["nomebres"]));
+// empleadosArray.forEach( cada => console.log( cada["nomebres"]));
 
 
 const rotar=document.querySelector(".rota");
@@ -232,9 +238,9 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
 
 
 
-        console.log(typeof empleados[0].sueldos)
+        console.log(typeof empleadosArray[0].sueldos)
 
-        const emas300 = empleados.filter((x) => parseInt(x.sueldos) > 300)
+        const emas300 = empleadosArray.filter((x) => parseInt(x.sueldos) > 300)
         console.log(emas300.length + "cantidad" + emas300[0])
         // datos.outerHTML =""
         if (emas300.length >= 0) {
@@ -248,7 +254,7 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
             for (n of emas300) {
                 // resud += `<div >${n.nomebres}</div>  <div>${n.sueldos}</div> <div class="datos">+</div> `
                 
-                resud += `<tr class="datos">
+                resud += `</tr>
                 <td>${n.nomebres}</td> <td>${n.sueldos}</td> </tr> `
                 
                 // '<div>'+n.nomebres+'</div>'+'<div>'+n.sueldos+'</div>'
@@ -267,14 +273,18 @@ document.querySelector("#empleadosMas300").addEventListener("click", (e) => {
             // ${resud}
             // </div>`
 
-            datos.outerHTML = resud;
-            document.querySelector(".final").innerText = resud;
+            // datos.outerHTML=""
+
+            datos.innerHTML= `<tr  >
+            <thead> <td>nombre</td><td>sueldo</td></thead>
+            </tr>`+resud
+            // document.querySelector(".final").innerText = resud;
         } else {
             datos.innerText = "no se encontro sueldo mas de 300"
         }
         console.log("no se encontro sueldo mas de 300")
     } catch (error) {
-        datos.innerText = "sin datos"
+        datos.innerText = "sin datos "+ error
     }
 
 return
