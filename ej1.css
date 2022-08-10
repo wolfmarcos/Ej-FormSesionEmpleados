@@ -518,6 +518,11 @@ body {
   }
 
  */
+ .card:hover {
+  transform: translate(-1%, 1%) perspective(1000px) rotate(-10deg);
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
+    0 10px 100px rgba(0, 0, 0, 0.5);
+}
   @media screen and (max-width:538px) {
     header {
       display: grid;
@@ -541,10 +546,6 @@ body {
       /* left: 60%; */
       transform: translate(-10%, -3%) perspective(1000px) 
     }
-    .card:hover {
-      transform: translate(-1%, 1%) perspective(1000px) rotate(-10deg);
-      box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
-        0 10px 100px rgba(0, 0, 0, 0.5);
-    }
+ 
   
   }
