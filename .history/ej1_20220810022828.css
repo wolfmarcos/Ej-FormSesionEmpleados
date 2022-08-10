@@ -479,18 +479,23 @@ body {
  
   }
   .details{ display: flex;
-   
- 
- justify-content: center;
- align-items: space-between;
- text-align: center;
-   width: 100%;
-   height: 100%;
+    /* margin:0 40%; */
   
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+
   }
   .card {
     width: 28vw;
     height: 66vh;
+    display: flex;
+    /* margin:0 40%; */
+  
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background-color
   }
  
   /*

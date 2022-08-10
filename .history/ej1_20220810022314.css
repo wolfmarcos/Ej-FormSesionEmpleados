@@ -479,19 +479,18 @@ body {
  
   }
   .details{ display: flex;
-   
- 
- justify-content: center;
- align-items: space-between;
- text-align: center;
-   width: 100%;
-   height: 100%;
+    margin5%;
   
+   @media screen and (max-width: 1000px) {
+    body {
+      /*background-color: red;*/
+    }
+    .card {
+      width: 28vw;
+      height: 66vh;
+    }
   }
-  .card {
-    width: 28vw;
-    height: 66vh;
-  }
+}
  
   /*
   .details span {

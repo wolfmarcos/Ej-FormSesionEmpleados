@@ -1,7 +1,7 @@
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+ 
 }
 
 main{
@@ -81,7 +81,7 @@ border-radius: 400px;
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: rgb(205, 255, 253);
+  /* background-color: rgb(205, 255, 253); */
   padding: 2%;
 
 }
@@ -199,6 +199,7 @@ position: relative;
  animation: espera 0.5s steps(6) infinite ;
  width:110px;
  visibility: hidden;
+ 
 }
 
 
@@ -421,6 +422,8 @@ body {
     transform: translate(-50%, 20%) perspective(2000px) rotate(-10deg);
     box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
       0 10px 100px rgba(0, 0, 0, 0.5);
+      
+max-height: 70vw;
   }
   .card:before {
     content: "";
@@ -463,6 +466,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    max-height: 70vw;
   }
   .card:hover .imgbox {
     transform: rotateY(-135deg);
@@ -478,19 +482,26 @@ body {
     /* flex-direction: column; */
  
   }
-  .details{ display: flex;
-   
- 
- justify-content: center;
- align-items: space-between;
- text-align: center;
-   width: 100%;
-   height: 100%;
-  
+  .details{ 
+    display: flex;
+    margin:0 20%;
+    max-height: 20vw;
+
+
+
   }
   .card {
-    width: 28vw;
+    /* min-height: 100vw; */
     height: 66vh;
+    display: flex;
+    
+     
+ justify-content: center;
+ align-items: center;
+ 
+
+
+
   }
  
   /*
@@ -518,7 +529,7 @@ body {
   }
 
  */
-  @media screen and (max-width:538px) {
+  @media screen and (max-width:550px) {
     header {
       display: grid;
       grid-template-columns:1fr;
@@ -533,9 +544,9 @@ body {
     justify-content: center;}
 
     .card {
-      margin: 12%;
-      width: 70vw;
-      height: 40vh;
+      margin: 1%;
+      width: 78vw;
+      height: 39vh;
       /* position: absolute; */
       /* top: 50%; */
       /* left: 60%; */

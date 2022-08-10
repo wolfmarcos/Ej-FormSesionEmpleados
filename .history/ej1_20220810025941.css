@@ -479,13 +479,12 @@ body {
  
   }
   .details{ display: flex;
-   
- 
+    /* margin:0 40%; */
+  padding: ;
  justify-content: center;
- align-items: space-between;
+ align-items: center;
  text-align: center;
    width: 100%;
-   height: 100%;
   
   }
   .card {
