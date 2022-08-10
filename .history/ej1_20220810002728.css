@@ -1,0 +1,525 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+main{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+/* margin: 150px auto; */
+width: 70%;
+  align-items: center;
+  /* height: 300px; */
+      background-color: rgb(225, 22, 103, 0.1);
+      flex-direction: row-reverse;
+      /* justify-content:center; */
+      /* align-items:center; */
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 1;
+      margin: 8%;
+      
+
+}
+.titulo{
+  text-shadow:10px 10px 10px #146a56;
+}
+
+
+.fa-xmark{
+  top: 0;
+  /* bottom: 0; */
+  right:0;
+  padding: 4%;
+  position: absolute;
+
+  width: 30px;
+  border-radius: 100px; 
+
+  color: rgb(181, 231, 229);;
+  order:1;
+  font-size: 55px;
+
+}
+
+.rota{
+  top: 0;
+/* bottom: 0; */
+right:0;
+padding: 4%;
+position: absolute;
+box-shadow:10px 10px 10px #0F362D;
+width: 40px;
+height: 40px;
+border-radius: 400px;
+ 
+}
+
+
+
+
+
+
+
+
+.fa-xmark:hover{
+  animation-name: animate  ;
+  animation-duration: 2s;
+  /* linear infinite */
+  color: red;}
+  .setGira{
+    animation-name: animate  ;
+    animation-duration: 2s;}
+
+
+
+.nv{    visibility: hidden;} 
+.forms {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(205, 255, 253);
+  padding: 2%;
+
+}
+.empleadosMas300-div{
+  grid-column:  1/3 ;
+ margin: 5%;
+display: flex;
+
+justify-content: center;
+
+
+}
+
+
+.h .nota {
+  visibility: hidden;
+}
+
+
+.c input {
+  border-bottom: 4px solid greenyellow;
+}
+
+.f .nota {
+  visibility: visible;
+}
+
+
+.f input {
+  border-bottom: 4px solid rgb(230, 31, 31)
+}
+
+.alet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  padding: 3%;
+  width: 100%;
+  background-color: rgb(0, 174, 255);
+}
+
+@media screen and (max-width:538px) {
+  header {
+    display: grid;
+    grid-template-columns:1fr;
+  
+  }
+
+  .empleadosMas300-div{
+    grid-column:  1/2 ;
+   margin: 2%;
+  display: flex;
+  
+  justify-content: center;}
+
+}
+
+@keyframes animate  {
+  0%{transform: rotate(1deg);
+ 
+}
+100%{ transform: rotate(360deg);}
+}
+
+table{
+    
+	/* align-self:center; */
+	border-collapse: collapse;
+	/* width: 100%; */
+    /* display: flex; */
+    /* padding: 50%; */
+    margin: 50%;
+    position: absolute;
+    
+   
+}
+
+ th, td,thead{
+    min-width: 100px;
+	 text-align: center;
+    
+} 
+
+thead{
+	background-color: #041c17;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+   
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}
+
+.imga{ width:140px;
+  height: 180px;
+/* background-color: #041c17; */
+/* background-color: #041c17; */
+/* transform: translate(25% ,-15%); */
+position: relative;
+
+}
+.url-animada{ background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/653a2e5d-b324-49fa-8f9b-aceb393c4f70/de6l5ww-d8ce281b-194d-4715-ad0a-160ac35bc8ec.png/v1/fill/w_1280,h_1721,q_80,strp/super_mario_sprite_sheet_by_nicogamer337_de6l5ww-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcyMSIsInBhdGgiOiJcL2ZcLzY1M2EyZTVkLWIzMjQtNDlmYS04ZjliLWFjZWIzOTNjNGY3MFwvZGU2bDV3dy1kOGNlMjgxYi0xOTRkLTQ3MTUtYWQwYS0xNjBhYzM1YmM4ZWMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pbc0KyCdnt_C1s_kWUmdQ5mQPJHMHvfgvTcxC7qdkPQ')no-repeat;}
+.sprite {position: absolute;
+ text-align: center;
+   
+  background-size:5000px ;
+  background-position:-15px -200px;
+/* object-fit: ; */
+  /* background: url('https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg')no-repeat;  */
+/* background-size:100%; */
+ width: 100%;
+ height: 100%;
+ /* position: absolute; */
+ /* background: #041c17; */
+/* top: -120px; */
+ /* width: 100%; */
+ /* height: 100%; */
+ /* transform: translate(25% ,-15%); */
+ animation: espera 0.5s steps(6) infinite ;
+ width:110px;
+ visibility: hidden;
+}
+
+
+.sprite2{
+  position: absolute;
+  text-align: center;
+    
+   background-size:5000px ;
+   background-position:-16px -450px;
+ /* object-fit: ; */
+   /* background: url('https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg')no-repeat;  */
+ /* background-size:100%; */
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  /* background: #041c17; */
+ /* top: -120px; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* transform: translate(25% ,-15%); */
+   animation: corre 0.8s steps(8) infinite ; 
+   transform: translate(0% ,-15%);
+   transition: 0.5s;
+   width:109px;
+   visibility: hidden
+
+ }
+ .sprite:hover{
+  position: absolute;
+  text-align: center;
+  transition: 5s;
+   background-size:4900px ;
+   background-position:-15px -2770px;
+ /* object-fit: ; */
+   /* background: url('https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg')no-repeat;  */
+ /* background-size:100%; */
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  /* background: #041c17; */
+ /* top: -120px; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* transform: translate(25% ,-15%); */
+   animation: salta 1s steps(6) infinite ; 
+   /* transform: translate(0% ,-15%); */
+   /* transition: 0.5s; */
+   border-radius: 60px;
+   width:110px;
+   /* border-left-width: 11900px; */
+   visibility: hidden
+ }
+/* 127 por movimiento  primero*/
+/* 227 cambio movimiento  primero*/
+ @keyframes salta {
+  
+  50%{transform: translate(150% ,-115%);width:150px;}
+  /* 80%{transform: translate(480% ,-5px );} */
+  90%{transform: translate(280% ,14%);}
+  95%{background-position:-1420px -2720px ;} 
+
+/* 100%{transform: overflow: ;} */
+
+/* 60%{background-position: -626px -480px} */
+ /* 66%{background-position:-26px -760px}  */
+ /* 80%{background-position:-626px -760px} */
+ 
+ /* 33%{background-position:-126px -200px;}  */
+ 
+} 
+
+
+
+@keyframes espera {
+
+  
+  /* 100%{background-position:-26px -200px;}
+  33%{background-position:-126px -200px;}
+  66%{background-position:-226px -200px;} */
+100%{background-position:-616px -200px}
+   /* 66%{background-position:-26px -760px}  */
+   /* 80%{background-position:-626px -260px} */
+
+   
+ 
+}
+
+
+@keyframes corre {
+  
+    /* 50%{transform: translate(140% ,-115%);} */
+
+  90%{background-position:-1016px -460px} 
+  90%{transform: translate(280% ,-15%);}
+  /* 100%{transform: overflow: ;} */
+  
+/* 60%{background-position: -626px -480px} */
+   /* 66%{background-position:-26px -760px}  */
+   /* 80%{background-position:-626px -760px} */
+   
+   /* 33%{background-position:-126px -200px;}  */
+} 
+
+
+
+.sprite4{
+  position: absolute;
+  text-align: center;
+    
+   background-size:4800px ;
+   background-position:-5px -4150px;
+ /* object-fit: ; */
+   /* background: url('https://png.pngtree.com/background/20210712/original/pngtree-modern-double-color-futuristic-neon-background-picture-image_1181573.jpg')no-repeat;  */
+ /* background-size:100%; */
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  /* background: #041c17; */
+ /* top: -120px; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* transform: translate(25% ,-15%); */
+   animation: gira 1s steps(8) infinite ; 
+   /* transform: translate(0% ,-15%); */
+   /* transition: 0.5s; */
+   border-radius: 60px;
+   width:100px;
+   /* border-left-width: 11900px; */
+   visibility: hidden;
+ }
+/* 127 por movimiento  primero*/
+/* 227 cambio movimiento  primero*/
+ @keyframes gira {
+  
+  /* 50%{transform: translate(150% ,-115%);width:150px;} */
+  /* 80%{transform: translate(480% ,-5px );} */
+  /* 90%{transform: translate(280% ,14%);} */
+  95%{background-position:-940px -4150px;} 
+
+/* 100%{transform: overflow: ;} */
+
+/* 60%{background-position: -626px -480px} */
+ /* 66%{background-position:-26px -760px}  */
+ /* 80%{background-position:-626px -760px} */
+ 
+ /* 33%{background-position:-126px -200px;}  */
+} 
+.repe{
+  /* background-color: rgb(42, 63, 165); border-radius:  100px; */
+  /* transition: 1s; */
+  visibility: visible;
+}
+
+.sprite5{
+  /* position: absolute; */
+  text-align: center;
+    
+   background-size:5000px ;
+
+ /* object-fit: ; */
+   background: url('m.jpg')no-repeat;  
+   background-position: -199px -670px;
+ /* background-size:100%; */
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+  /* background: #041c17; */
+ /* top: -120px; */
+  /* width: 100%; */
+  /* height: 100%; */
+  
+   animation: aca 1s steps(3) infinite ; 
+   transform: translate(110% ,-10%);
+   /* transition: 0.5s; */
+   /* border-radius: 60px; */
+   width:80px;
+   /* border-left-width: 11900px; */
+   /* visibility: hidden; */
+ }
+/* 127 por movimiento  primero*/
+/* 227 cambio movimiento  primero*/
+ @keyframes aca {
+  
+  /* 50%{transform: translate(150% ,-115%);width:150px;} */
+  /* 80%{transform: translate(480% ,-5px );} */
+  /* 90%{transform: translate(280% ,14%);} */
+  /* 95%{background-position:-340px -5150px;}  */
+
+/* 100%{transform: overflow: ;} */
+
+/* 60%{background-position: -626px -480px} */
+ /* 66%{background-position:-26px -760px}  */
+ 100%{background-position: -400px -670px;}
+ 
+ /* 33%{background-position:-126px -200px;}  */
+} 
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgreen;
+  }
+  .card {
+    width: 22vw;
+    height: 64vh;
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) perspective(2000px);
+    transform-style: preserve-3d;
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5),
+      0 20px 100px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+  }
+  .card:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5),
+      0 10px 100px rgba(0, 0, 0, 0.5);
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    left: 0;
+    background: #475b02;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+  }
+  .card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #7ea301;
+    transform-origin: left;
+    transform: skewY(-45deg);
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .card .imgbox {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: relative;
+    transform-origin: left;
+    background-color
+  }
+  .card:hover .imgbox {
+    transform: rotateY(-135deg);
+  }
+  .card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    body {
+      /*background-color: red;*/
+    }
+    .card {
+      width: 28vw;
+      height: 66vh;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    body {
+      /*background-color:pink;*/
+    }
+    .card {
+      width: 40vw;
+      height: 70vh;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+    }
+  }
+  .details span {
+    display: none;
+  }
+  @media screen and (max-width: 500px) {
+    body {
+      background-color: lightgreen;
+    }
+    .card {
+      width: 48vw;
+      height: 60vh;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+    }
+    .card:hover {
+      position: absolute;
+      left: 70%;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
